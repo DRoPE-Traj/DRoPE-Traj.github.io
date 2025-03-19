@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="DRoPE: Directional Rotary Position Embedding for Efficient Agent Interaction Modeling">
+  <meta name="keywords" content="Deep learning, Motion prediction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DRoPE: Directional Rotary Position Embedding for Efficient Agent Interaction Modeling</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">KiGRAS: Kinematic-Driven Generative Model for Realistic Agent Simulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Jianbo Zhao<sup>1,2*</sup>,</span>
+            <span class="author-block">
+              Jiaheng Zhuang<sup>2,3*</sup>,</span>
+            <span class="author-block">
+              Qibin Zhou<sup>2*</sup>,</span>
+            <span class="author-block">
+              Taiyu Ban<sup>1*</sup>,</span>
+            <span class="author-block">
+              Ziyao Xu<sup>2&dagger;</sup>,</span>
+            <span class="author-block">
+              Hangning Zhou<sup>2&dagger;</sup>,</span>
+            <span class="author-block">
+              Junhe Wang<sup>2</sup>,</span>
+            <span class="author-block">
+              Guoan Wang<sup>2</sup>,</span>
+            <span class="author-block">
+              Zhiheng Li<sup>3</sup>,</span>
+            <span class="author-block">
+              Bin Li<sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Science and Technology of China,</span>
+            <span class="author-block"><sup>2</sup>Mach Drive,</span>
+            <span class="author-block"><sup>3</sup>Tsinghua University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="http://arxiv.org/abs/2407.12940"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="http://arxiv.org/abs/2407.12940"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/Yk0vRX2rUeQ"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate and efficient modeling of agent interactions is essential for trajectory generation, the core of autonomous driving systems. Existing methods, scene-centric, agent-centric, and query-centric frameworks, each present distinct advantages and drawbacks, creating an impossible triangle among accuracy, computational time, and memory efficiency. To break this limitation, we propose Directional Rotary Position Embedding (DRoPE), a novel adaptation of Rotary Position Embedding (RoPE), originally developed in natural language processing. Unlike traditional relative position embedding (RPE), which introduces significant space complexity, RoPE efficiently encodes relative positions without explicitly increasing complexity but faces inherent limitations in handling angular information due to periodicity. DRoPE overcomes this limitation by introducing a uniform identity scalar into RoPE's 2D rotary transformation, aligning rotation angles with realistic agent headings to naturally encode relative angular information. We theoretically analyze DRoPE’s correctness and efficiency, demonstrating its capability to simultaneously optimize trajectory generation accuracy, time complexity, and space complexity. Empirical evaluations compared with various state-of-the-art trajectory generation models, confirm DRoPE’s good performance and significantly reduced space complexity, indicating both theoretical soundness and practical effectiveness.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/Yk0vRX2rUeQ?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{zhao2024kigraskinematicdrivengenerativemodel,
+      title={KiGRAS: Kinematic-Driven Generative Model for Realistic Agent Simulation}, 
+      author={Jianbo Zhao and Jiaheng Zhuang and Qibin Zhou and Taiyu Ban and Ziyao Xu and Hangning Zhou and Junhe Wang and Guoan Wang and Zhiheng Li and Bin Li},
+      year={2024},
+      eprint={2407.12940},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2407.12940}, 
+}</code></pre>
+  </div>
+</section>
+
+
+<section class="section" id="Acknowledgement">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgement</h2>
+    <p>
+      This website is adapted from <a
+      href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license"
+                                          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+      Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</section>
+
+
+</body>
+</html>
